@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="https://server.ai-school.com" method="POST">
+        <input type="text" name="userd" placeholder="아이디를 입력하세요"/>
+        <input type="password" name="password" placeholder="비밀번호를 입력하세요"/>
+        <br/>
+        <br/>
+        <label for="password_hint" class="pw_hint">비밀번호 힌트</label>
+        <select name="password_hint">
+            <option value="태어난 도시">태어난 도시는?</option>
+            <option value="좋아하는 음식">좋아하는 음식은?</option>
+        </select>
+        <input type="text" name="password_hint" placeholder="답을 입력하세요">
+    
+        <br/>
+        <br/>
+        <textarea name="content" id="" cols="30" rows="10">자기소개를 입력하세요
+        </textarea>
+
+        <button type="submit">제출</button>
+    </form>
+    <div>
+        <img src="./죠르디.jpg" alt="죠르디">
+    </div>
+</body>
+</html>

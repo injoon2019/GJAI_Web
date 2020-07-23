@@ -1,0 +1,40 @@
+/* body{
+    background-color: red;
+} */
+
+/*class */
+.box{
+    background-color: aqua;
+    width:100px;
+    height: 50px;
+}
+
+/*id*/
+#box_id2{
+    background-color: red;
+}
+
+/*복합 선택자*/
+.box3 > span{
+    color:yellow;
+}
+
+a:visited{
+    color:red;
+}
+
+/*마우스를 올렸을때*/
+a:hover{
+    color:blue;
+}
+
+/*Cascading*/
+#box_id3{
+    background-color: blue;
+}
+
+/*padding*/
+input{
+    padding-left: 30px;
+    margin: 10px;
+}
