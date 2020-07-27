@@ -1,0 +1,56 @@
+.box_container1{
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 40%;
+    height: 100px;
+
+    margin: 3px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+
+}
+.box_container2{
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 40%;
+    height: 100px;
+
+    margin: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.box_container3{
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 40%;
+    height: 100px;
+
+    margin: 3px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    border-radius: 5px;
+
+    margin: 3px;
+
+    font-size: 25px;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
