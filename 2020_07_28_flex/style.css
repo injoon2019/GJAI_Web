@@ -1,0 +1,190 @@
+.entire_container{
+    display: flex;
+}
+.left_container{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.right_container{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+}
+
+.big_textbox{
+    display: flex;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.mid_textbox{
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.small_textbox{
+    display: flex;
+    font-size: 20px;
+    color: blue;
+}
+
+/* 국민 */
+.bank1{
+    display:flex;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    width:50%;
+    height:65px;
+
+    box-shadow: 
+    0 30px 60px 12px rgba(0, 0, 33, 0.05),
+    0 4px 24px 0 rgba(0, 0, 33, 0.05),
+    0 0 1px 0 rgba(0, 0, 33, 0.09) ;
+
+    justify-content: space-between;
+}
+.logo1{
+
+}
+.name1{
+    display:flex;
+    align-items: center;
+}
+.balance1{
+    display:flex;
+    align-items: center;
+    padding-right: 30px;
+    
+}
+
+/* 신한 */
+.bank2{
+    display:flex;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    width:50%;
+    height:65px;
+
+    box-shadow: 
+    0 30px 60px 12px rgba(0, 0, 33, 0.05),
+    0 4px 24px 0 rgba(0, 0, 33, 0.05),
+    0 0 1px 0 rgba(0, 0, 33, 0.09) ;
+
+    justify-content: space-between;
+}
+.logo2{
+
+}
+.name2{
+    display:flex;
+    align-items: center;
+}
+.balance2{
+    display:flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+/* 하나 */
+.bank3{
+    display:flex;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    width:50%;
+    height:65px;
+
+    box-shadow: 
+    0 30px 60px 12px rgba(0, 0, 33, 0.05),
+    0 4px 24px 0 rgba(0, 0, 33, 0.05),
+    0 0 1px 0 rgba(0, 0, 33, 0.09) ;
+
+    justify-content: space-between;
+}
+.logo3{
+
+}
+.name3{
+    display:flex;
+    align-items: center;
+}
+.balance3{
+    display:flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+/* 우리 */
+.bank4{
+    display:flex;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    width:50%;
+    height:65px;
+
+    box-shadow: 
+    0 30px 60px 12px rgba(0, 0, 33, 0.05),
+    0 4px 24px 0 rgba(0, 0, 33, 0.05),
+    0 0 1px 0 rgba(0, 0, 33, 0.09) ;
+
+    justify-content: space-between;
+}
+.logo4{
+
+}
+.name4{
+    display:flex;
+    align-items: center;
+}
+.balance4{
+    display:flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+/* 농협 */
+.bank5{
+    display:flex;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    width:50%;
+    height:65px;
+
+    box-shadow: 
+    0 30px 60px 12px rgba(0, 0, 33, 0.05),
+    0 4px 24px 0 rgba(0, 0, 33, 0.05),
+    0 0 1px 0 rgba(0, 0, 33, 0.09) ;
+
+    justify-content: space-between;
+}
+.logo5{
+
+}
+.name5{
+    display:flex;
+    align-items: center;
+}
+.balance5{
+    display:flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.card_left{
+    display:flex;
+}
+.card_right{
+    display: flex;
+}
