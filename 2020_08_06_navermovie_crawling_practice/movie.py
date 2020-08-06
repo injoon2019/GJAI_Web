@@ -80,7 +80,10 @@ headers = {
 
 
 for movie_dict in movie_data_list:
+    print("\n")
+    print("\n")
     print(movie_dict['title'])
+
     
     params = (
         ('code', movie_dict['code']),
@@ -99,10 +102,10 @@ for movie_dict in movie_data_list:
         score = review.select_one('div.star_score > em').get_text()
         
         try:
-            text = review.select_one(f'div.score_reple > p > span#_filtered_ment_{i} > span > a')['data-src']
+            text = review.select_one(f'div.score_reple > p > span#_filtered_ment_{i}').text.strip()
       
         except:
-            text = review.select_one(f'div.score_reple > p > span#_filtered_ment_{i}').text.strip()
+            text = review.select_one(f'div.score_reple > p > span#_filtered_ment_{i} > span > a')['data-src']
         
         score_and_review.append((score, text))
 
