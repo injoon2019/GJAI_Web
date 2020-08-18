@@ -6,12 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>학생 이름을 입력해보세요! </h1>
-    <form action="{%url 'result '%}" method = "POST">
-        {% csrf_token %} 
-        <input name="username" placeholder="이름"/>
-        <br />
-        <br />
+    <h1>글자수 세기</h1>
+    <form action="{%url 'count' %}" method="POST">
+        {% csrf_token %}
+        <input name="sentence" placeholder="입력하세요"/>
+        <br/>
+        <br/>
         <button type="submit">체크하기</button>
     </form>
 </body>

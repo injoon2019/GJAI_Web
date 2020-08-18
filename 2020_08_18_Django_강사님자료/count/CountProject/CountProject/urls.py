@@ -1,4 +1,4 @@
-"""studentproject URL Configuration
+"""CountProject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -15,11 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from firstapp import views
+from CountApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name= 'home'), 
-    path('login/', views.login, name= 'login'), 
-    path('signout/', views.signout, name= 'signout'), 
+    path('', views.home, name='home'),
+    path('result/', views.result, name='result'),
 ]
