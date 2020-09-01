@@ -44,3 +44,32 @@ def add(request, class_pk):
     }
 
     return render(request, 'add.html', context)
+
+def edit(request, student_pk):
+
+    if request.method=="POST":
+
+        AiStudent.objects.filter(pk=student_pk).update(
+            name=request.POST['name'],
+            phone_num = request.POST['phone_num'],
+            intro = request.POST['intro']
+        )
+        return redirect('student', student_pk)
+    
+    student = AiStudent.objects.get(pk=student_pk)
+
+    context = {
+        'student': student
+    }
+
+    return render(request, 'edit.html', context)
+
+
+def delete(request, class_num, student_pk):
+    #삭제하기
+    target_student = AiStudent.objects.get(pk=student_pk)
+    target_student.delete()
+
+    class_pk = class_num
+
+    return redirect('detail', class_pk)

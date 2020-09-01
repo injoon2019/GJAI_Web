@@ -1,4 +1,4 @@
-"""AiShoolproject URL Configuration
+"""AiSchoolProject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -15,14 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AiInfoapp import views
+from AiInfoApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home"),
+    path('', views.home, name='home'),
     path('detail/<int:class_pk>', views.detail, name='detail'),
-    path('add/<int:class_pk>', views.add, name="add"),
-    path('student/<int:student_pk>', views.student, name="student"),
-    path('edit/<int:student_pk>', views.edit, name="edit"),
-    path('delete/<int:class_num>/<int:student_pk>', views.delete, name="delete")
+    path('add/<int:class_pk>', views.add, name='add'),
+    path('student/<int:student_pk>', views.student, name='student'),
+    path('edit/<int:student_pk>', views.edit, name='edit'),
+    path('delete/<int:student_pk>/<int:class_num>', views.delete, name='delete'),
+    # authentication
+    path('signup/', views.signup, name='signup'),
+    path('login/', views.login, name='login'),
+    path('logout/', views.logout, name='logout'),
 ]
